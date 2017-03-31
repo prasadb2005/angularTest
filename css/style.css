@@ -1,0 +1,248 @@
+.parentDiv{
+    background-color: #ffffff;
+    width:100%;
+    height: 100%;
+}
+.parentHead{
+    height:10%;
+    background-color: #FFF;
+
+}
+.contentDiv{
+    background-color: #ffffff;
+    height: 64%;
+}
+.menuDiv{
+    background-color: #99ccff;
+    height: 9%;
+}
+.footer{
+    background-color: #9999ff; 
+    height:11%
+}
+.logo{
+    width:10%;
+    height: 100% ; 
+    background-color: #000099;
+    color:white;
+    float:left;
+}
+.headingSub1{
+    width:90%;
+    height:10%;
+
+}
+.mainDiv{
+    background-color: #bce8f1;
+    margin-left: 20%;
+    margin-right:20%;
+    margin-top: 20px;
+}
+.incomeDiv{
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: #307ECC;
+    color:white;
+    
+}
+.expenseDiv{
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: #307ECC;
+    color:white;
+}
+.incomeValues{
+    float:left;
+    width:50%;
+    text-align: center;
+}
+.expenseValues{
+    float:left;
+    width:50%;
+    text-align: center;
+}
+.transactionHeading{
+    
+    font-weight: bold;
+}
+.transactionCell{
+    float: left;
+    width:40%;
+    border: 1px  solid;
+
+}
+.buttonCellHeading{
+    width:15%;
+    float:left;
+    border: 1px solid;
+    
+}
+.buttonCell{
+    width:15%;
+    float:left;
+    border: 1px solid;
+    padding: 2px;
+}
+.transactionRow{
+
+}
+.totalRow{
+
+}
+.totalHeading{
+    width: 40%;
+    font-weight: bold;
+    float:left;
+    border: 1px solid;
+}
+.totalAmount{
+    width:15%;
+    float:left;
+    border: 1px solid;
+}
+.menuButtonCell{
+
+    text-align: center;
+    vertical-align: middle;
+    padding:3px 2px 3px 2px;
+    float:left;
+}
+.summaryDiv{
+    margin-left: 25%;
+    margin-right:25%;
+}
+.incomeSummary{
+    float: left;
+    width: 47%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.amountCell{
+    border:1px solid;
+    float:left;
+    text-align:center;
+}
+.incomeRow{
+    float:left;
+    width: 100%;
+}
+.incomeCell{
+        width: 76%;
+    float: left;
+    border: 1px solid;
+}
+.summaryHeading{
+    width:100%;
+    float:left;
+    
+}
+.summaryHeadingCell1{
+    width:76%;
+    border: 1px solid;
+    float:left;
+}
+.summaryHeadingCell2{
+    width:24%;
+    border: 1px solid;
+    float:left;
+}
+.incomeValue{
+    width:24%;
+    border: 1px solid;
+    float:left;
+}
+.dateClass{
+    float:left;
+    margin-left:30%;
+    margin-right:30%;
+    margin-bottom: 20px;
+}
+.dateHeading{
+    float:left;
+    margin-left:20px;
+    font-weight:bold;
+}
+.dateValue{
+    float:left;
+    margin-left:20px;
+}
+
+.saveBtn{
+    height: 17PX;
+    width: 17px;
+}
+.inputTxt{
+    
+   height: 19px;
+    width: 100px;
+    font-size: 10px;
+    padding: 3px;
+    margin: 3px;
+  }
+.summaryTable{
+    width:100%;
+    
+}
+.summaryTd{
+    border: 1px solid;
+}
+.summaryTags{
+    width:150px;
+}
+.tagsDiv{
+    float: left;
+    width: 150px;
+}
+.monthDiv{
+    float: left;width: 80%;
+}
+
+/* Styles go here */
+table {
+max-width: 100%;
+background-color: transparent;
+border-collapse: collapse;
+border-spacing: 0;
+
+}
+.table thead th {
+vertical-align: bottom;
+}
+.table th {
+font-weight: bold;
+}
+.table th, .table td {
+padding: 8px;
+line-height: 20px;
+text-align: left;
+vertical-align: top;
+
+}
+.table td {
+  border-top: 1px solid #dddddd; 
+
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+width:150px;
+}
+.table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th {
+background-color: #f9f9f9;
+}
+.table-bordered {
+border: 1px solid #dddddd;
+border-collapse: separate;
+border-left: 0;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.table-bordered th, .table-bordered td {
+border-left: 1px solid #dddddd;
+width:100px;
+}
+

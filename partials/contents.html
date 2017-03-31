@@ -1,0 +1,87 @@
+
+<div class="dateClass">
+    <div  class="dateHeading">Month</div>
+    <div  class="dateValue"><select ng-model="selectedMonth" ng-options="k as v for (k, v) in months"></select></div>
+    <div  class="dateHeading">Year</div>
+    <div  class="dateValue"><select ng-model="selectedYear" ng-options="x for x in years"></select></div>
+    <div  class="dateHeading"><input type="button" name="show" value="show" ng-click="showRecordsByMonthYear()"></div>
+</div>
+<div class="mainDiv">
+    <div class="incomeDiv"> Income </div>
+    <div class="expenseDiv"> Expense </div>
+    <div class="incomeValues">
+        
+        <div class="transactionHeading"> 
+            <div class="transactionCell">income</div>
+            <div class="transactionCell">amount</div>
+            <div class="buttonCellHeading">buttons</div>
+        </div>
+        <div class="transactionRow"  ng-repeat="values in incomeValues"> 
+            <div class="transactionCell">{{values.productName}}</div>
+            <div class="transactionCell">{{values.amount}}</div>
+            <div class="buttonCell"><img ng-src="remove.png" ng-click="removeRow(values.id)" alt="Description" /></div>
+        </div>
+        <div class="transactionRow" ng-show="showNewIncomeRow"> 
+            <div class="transactionCell"><input type="text" ng-model="newIncomeProduct" class="inputTxt"/></div>
+            <div class="transactionCell"><input type="text" ng-model="newIncomeAmount" class="inputTxt" /></div>
+            <div class="buttonCell"><img ng-src="save.png" class="saveBtn" ng-click="saveRow(newIncomeProduct, newIncomeAmount, 1)" alt="Description" /></div>
+        </div>
+        <div class="totalRow"> 
+            <div class="totalHeading">total</div>
+            <div class="totalHeading">{{incomeTotal}}</div>
+            <div class="totalAmount"><img ng-src="add.png"  ng-click="addRow(1)" alt="Description" /></div>
+        </div>
+    </div>
+    <div class="expenseValues">
+        <div class="transactionHeading"> 
+            <div class="transactionCell">Expense</div>
+            <div class="transactionCell">amount</div>
+            <div class="buttonCellHeading">buttons</div>
+        </div>
+        <div class="transactionRow" ng-repeat="expValues in expenseRecords"> 
+            <div class="transactionCell">{{expValues.productName}}</div>
+            <div class="transactionCell">{{expValues.amount}}</div>
+            <div class="buttonCell"><img ng-src="remove.png" ng-click="removeRow(expValues.id)" alt="Description"  /></div>
+        </div>
+        <div class="transactionRow" ng-show="showNewExpenseRow"> 
+            <div class="transactionCell"><input type="text" ng-model="newIncomeProduct" class="inputTxt"/></div>
+            <div class="transactionCell"><input type="text" ng-model="newIncomeAmount" class="inputTxt" /></div>
+            <div class="buttonCell"><img ng-src="save.png" class="saveBtn" ng-click="saveRow(newIncomeProduct, newIncomeAmount, 2)" alt="Description" /></div>
+        </div>
+        <div class="totalRow"> 
+            <div class="totalHeading">total</div>
+            <div class="totalHeading">{{expenseTotal}}</div>
+            <div class="totalAmount"><img ng-src="add.png" alt="Description"  ng-click="addRow(2)" /></div>
+        </div>
+    </div>
+</div>
+<div class="summaryDiv">
+    <div class="incomeSummary">
+        <div class="summaryHeading"> 
+            <div class="summaryHeadingCell1">previous balance</div>
+            <div class="summaryHeadingCell2">100</div>
+        </div>
+        <div class="incomeRow">
+            <div class="incomeCell">Current income</div>
+            <div  class="incomeValue">{{incomeTotal}}</div>
+        </div>
+        <div  class="incomeRow">
+            <div class="incomeCell">total</div>
+            <div  class="incomeValue">300</div>
+        </div>
+    </div>
+    <div class="incomeSummary">
+        <div class="summaryHeading"> 
+            <div class="summaryHeadingCell1">current expense</div>
+            <div class="summaryHeadingCell2">{{expenseTotal}}</div>
+        </div>
+        <div class="incomeRow">
+            <div class="incomeCell">remaining</div>
+            <div  class="incomeValue">100</div>
+        </div>
+        <div  class="incomeRow">
+            <div class="incomeCell">total</div>
+            <div  class="incomeValue">300</div>
+        </div>
+    </div>
+</div>

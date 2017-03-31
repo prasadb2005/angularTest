@@ -1,0 +1,27 @@
+<div ng-controller="summary">
+    <div class="tagsDiv">
+    <table class="summaryTags table table-striped table-bordered">
+            <tr>
+                <td>month/tag</td>
+            </tr>
+            <tr ng-repeat="(key, value) in tags" >
+                
+                <td class="summaryTd">
+                    {{value.tag}}
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="monthDiv">
+        <table class="summaryTable table table-striped table-bordered">
+            <tr>
+                <td ng-repeat="(key, value) in months" class="summaryTd" >{{value}}</td>
+            </tr>
+            <tr ng-repeat="values in expenseData">
+                <td  ng-repeat="value in months">
+                    {{values[value]}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

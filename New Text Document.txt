@@ -1,0 +1,18 @@
+CREATE TABLE  `angularcode_task`.`summary` (
+`id` INT NOT NULL AUTO_INCREMENT ,
+`tag` VARCHAR( 250 ) NOT NULL ,
+`jan` FLOAT( 8 ) NULL ,
+`feb` FLOAT( 8 ) NULL ,
+`mar` FLOAT( 8 ) NULL ,
+`apr` FLOAT( 8 ) NULL ,
+`may` FLOAT( 8 ) NULL ,
+`jun` FLOAT( 8 ) NULL ,
+`jul` FLOAT( 8 ) NULL ,
+`aug` FLOAT( 8 ) NULL ,
+`sep` FLOAT( 8 ) NULL ,
+`oct` FLOAT( 8 ) NULL ,
+`nov` FLOAT( 8 ) NULL ,
+`dec` FLOAT( 8 ) NULL ,
+PRIMARY KEY (  `id` )
+) ENGINE = MYISAM ;
+
